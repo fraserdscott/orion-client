@@ -1,34 +1,22 @@
 import {
     createWorld,
-    defineComponent,
     createEntity,
     withValue,
     defineSystem,
     Has,
     getComponentValue,
     setComponent,
-    Type,
 } from "@latticexyz/recs";
-import { defineCoordComponent, defineNumberComponent } from "@latticexyz/std-client";
+import { defineCoordComponent, defineNumberComponent, useComponentValueStream } from "@latticexyz/std-client";
 import { useEffect, useState } from "react";
 
-
 function Example() {
-    const [position, setPosition] = useState<any>({ x: 0, y: 0 });
+    const [world] = useState(createWorld());
+    const [Position] = useState(defineCoordComponent(world));
+    const [Movable] = useState(defineNumberComponent(world));
+    const positionStream = useComponentValueStream(Position);
 
     useEffect(() => {
-
-        // Create a new World
-        const world = createWorld();
-
-        // Define a couple components
-        const Position = defineCoordComponent(world);
-        const Movable = defineNumberComponent(world);
-
-        defineSystem(world, [Has(Position), Has(Movable)], (update) => {
-            setPosition(update.value[0]);
-        });
-
         const entity1 = createEntity(world, [withValue(Position, { x: 0, y: 0 }), withValue(Movable, { value: 10 })]);
 
         setInterval(() => {
@@ -43,7 +31,7 @@ function Example() {
 
     return (
         <div className="App">
-            <div>{position.x}</div>
+            <div>{positionStream?.x}</div>
         </div>
     )
 }
