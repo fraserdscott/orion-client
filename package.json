@@ -13,7 +13,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@latticexyz/recs": "0.8.1",
+    "@latticexyz/network": "^0.8.1",
+    "@latticexyz/recs": "^0.8.1",
+    "@latticexyz/utils": "^0.8.1",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",
