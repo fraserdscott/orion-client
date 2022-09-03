@@ -2,8 +2,6 @@ import {
     createWorld,
     createEntity,
     withValue,
-    defineSystem,
-    Has,
     getComponentValue,
     setComponent,
 } from "@latticexyz/recs";
@@ -14,7 +12,7 @@ function Example() {
     const [world] = useState(createWorld());
     const [Position] = useState(defineCoordComponent(world));
     const [Movable] = useState(defineNumberComponent(world));
-    const positionStream = useComponentValueStream(Position);
+    const positionStream = useComponentValueStream(Position, 0);
 
     useEffect(() => {
         const entity1 = createEntity(world, [withValue(Position, { x: 0, y: 0 }), withValue(Movable, { value: 10 })]);
