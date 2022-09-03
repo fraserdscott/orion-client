@@ -7,6 +7,8 @@ import {
 } from "@latticexyz/recs";
 import { defineCoordComponent, defineNumberComponent, useComponentValueStream } from "@latticexyz/std-client";
 import { useEffect, useState } from "react";
+import { setupContracts } from "./setupContracts";
+
 
 function Example() {
     const [world] = useState(createWorld());
@@ -15,6 +17,8 @@ function Example() {
     const positionStream = useComponentValueStream(Position, 0);
 
     useEffect(() => {
+        setupContracts(world).then(r => console.log(r));
+
         const entity1 = createEntity(world, [withValue(Position, { x: 0, y: 0 }), withValue(Movable, { value: 10 })]);
 
         setInterval(() => {
