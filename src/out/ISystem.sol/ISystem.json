@@ -1,0 +1,306 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "arguments",
+          "type": "bytes"
+        }
+      ],
+      "name": "execute",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "execute(bytes)": "09c5eabe",
+    "owner()": "8da5cb5b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"arguments\",\"type\":\"bytes\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/mud/packages/solecs/src/interfaces/ISystem.sol\":\"ISystem\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/\",\":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/\",\":ds-test/=lib/mud/node_modules/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=lib/mud/node_modules/hardhat/\",\":memmove/=lib/mud/node_modules/memmove/src/\",\":mud/=lib/mud/packages/solecs/src/\",\":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/\"]},\"sources\":{\"lib/mud/packages/solecs/src/interfaces/IOwned.sol\":{\"keccak256\":\"0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82\",\"dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG\"]},\"lib/mud/packages/solecs/src/interfaces/ISystem.sol\":{\"keccak256\":\"0xb592e00cad8c4907f623e12ee8968b1a0d2d3233466616ce52908d97631f57bf\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://9eaa438a69cf74ff00986908f7b38bddf67e5848ae7fb4ef1dbbf3aad42e830a\",\"dweb:/ipfs/QmXaho8gjkfA2yaU1kKSoP7xn8dBLGnq6QcgBEFfxh5tkU\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "arguments",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "execute",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/",
+        ":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/",
+        ":ds-test/=lib/mud/node_modules/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=lib/mud/node_modules/hardhat/",
+        ":memmove/=lib/mud/node_modules/memmove/src/",
+        ":mud/=lib/mud/packages/solecs/src/",
+        ":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/mud/packages/solecs/src/interfaces/ISystem.sol": "ISystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/mud/packages/solecs/src/interfaces/IOwned.sol": {
+        "keccak256": "0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b",
+        "urls": [
+          "bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82",
+          "dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG"
+        ],
+        "license": "Unlicense"
+      },
+      "lib/mud/packages/solecs/src/interfaces/ISystem.sol": {
+        "keccak256": "0xb592e00cad8c4907f623e12ee8968b1a0d2d3233466616ce52908d97631f57bf",
+        "urls": [
+          "bzz-raw://9eaa438a69cf74ff00986908f7b38bddf67e5848ae7fb4ef1dbbf3aad42e830a",
+          "dweb:/ipfs/QmXaho8gjkfA2yaU1kKSoP7xn8dBLGnq6QcgBEFfxh5tkU"
+        ],
+        "license": "Unlicense"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/mud/packages/solecs/src/interfaces/ISystem.sol",
+    "id": 26702,
+    "exportedSymbols": {
+      "IOwned": [
+        26688
+      ],
+      "ISystem": [
+        26701
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:322:22",
+    "nodes": [
+      {
+        "id": 26690,
+        "nodeType": "PragmaDirective",
+        "src": "38:24:22",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 26691,
+        "nodeType": "ImportDirective",
+        "src": "64:22:22",
+        "absolutePath": "lib/mud/packages/solecs/src/interfaces/IOwned.sol",
+        "file": "./IOwned.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 26702,
+        "sourceUnit": 26689,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 26701,
+        "nodeType": "ContractDefinition",
+        "src": "252:107:22",
+        "nodes": [
+          {
+            "id": 26700,
+            "nodeType": "FunctionDefinition",
+            "src": "284:73:22",
+            "functionSelector": "09c5eabe",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "execute",
+            "nameLocation": "293:7:22",
+            "parameters": {
+              "id": 26696,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26695,
+                  "mutability": "mutable",
+                  "name": "arguments",
+                  "nameLocation": "314:9:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26700,
+                  "src": "301:22:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 26694,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "301:5:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "300:24:22"
+            },
+            "returnParameters": {
+              "id": 26699,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26698,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26700,
+                  "src": "343:12:22",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 26697,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "343:5:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "342:14:22"
+            },
+            "scope": 26701,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 26692,
+              "name": "IOwned",
+              "nameLocations": [
+                "273:6:22"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 26688,
+              "src": "273:6:22"
+            },
+            "id": 26693,
+            "nodeType": "InheritanceSpecifier",
+            "src": "273:6:22"
+          }
+        ],
+        "canonicalName": "ISystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          26701,
+          26688
+        ],
+        "name": "ISystem",
+        "nameLocation": "262:7:22",
+        "scope": 26702,
+        "usedErrors": []
+      }
+    ],
+    "license": "Unlicense"
+  },
+  "id": 22
+}

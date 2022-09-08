@@ -1,0 +1,200 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "owner()": "8da5cb5b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/mud/packages/solecs/src/interfaces/IOwned.sol\":\"IOwned\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/\",\":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/\",\":ds-test/=lib/mud/node_modules/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=lib/mud/node_modules/hardhat/\",\":memmove/=lib/mud/node_modules/memmove/src/\",\":mud/=lib/mud/packages/solecs/src/\",\":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/\"]},\"sources\":{\"lib/mud/packages/solecs/src/interfaces/IOwned.sol\":{\"keccak256\":\"0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82\",\"dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/",
+        ":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/",
+        ":ds-test/=lib/mud/node_modules/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=lib/mud/node_modules/hardhat/",
+        ":memmove/=lib/mud/node_modules/memmove/src/",
+        ":mud/=lib/mud/packages/solecs/src/",
+        ":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/mud/packages/solecs/src/interfaces/IOwned.sol": "IOwned"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/mud/packages/solecs/src/interfaces/IOwned.sol": {
+        "keccak256": "0x14dd27a7fe1bdd1d17d814a40bab1886a6204ba3e45996f45cf8c6bd412e403b",
+        "urls": [
+          "bzz-raw://b4a5677a2bcc9159d4a90b66af9a888e33ac3cf3eae08f0b8548e9510131ec82",
+          "dweb:/ipfs/Qmdj7Jz274wP2KevSqdpFQc4msVi9jfkrNsQvCFoHNJcDG"
+        ],
+        "license": "Unlicense"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/mud/packages/solecs/src/interfaces/IOwned.sol",
+    "id": 24722,
+    "exportedSymbols": {
+      "IOwned": [
+        24721
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:99:16",
+    "nodes": [
+      {
+        "id": 24715,
+        "nodeType": "PragmaDirective",
+        "src": "38:24:16",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 24721,
+        "nodeType": "ContractDefinition",
+        "src": "64:72:16",
+        "nodes": [
+          {
+            "id": 24720,
+            "nodeType": "FunctionDefinition",
+            "src": "85:49:16",
+            "functionSelector": "8da5cb5b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "94:5:16",
+            "parameters": {
+              "id": 24716,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:2:16"
+            },
+            "returnParameters": {
+              "id": 24719,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24718,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24720,
+                  "src": "125:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 24717,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "125:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "124:9:16"
+            },
+            "scope": 24721,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IOwned",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          24721
+        ],
+        "name": "IOwned",
+        "nameLocation": "74:6:16",
+        "scope": 24722,
+        "usedErrors": []
+      }
+    ],
+    "license": "Unlicense"
+  },
+  "id": 16
+}

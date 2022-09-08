@@ -1,0 +1,354 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c3152de2c41ab840a0dcd106ea06967cc2e8674999547d58077cee133eecc22d64736f6c63430008100033",
+    "sourceMap": "107:504:10:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;107:504:10;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c3152de2c41ab840a0dcd106ea06967cc2e8674999547d58077cee133eecc22d64736f6c63430008100033",
+    "sourceMap": "107:504:10:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Enum of supported schema types\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/mud/packages/solecs/src/LibTypes.sol\":\"LibTypes\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/\",\":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/\",\":ds-test/=lib/mud/node_modules/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=lib/mud/node_modules/hardhat/\",\":memmove/=lib/mud/node_modules/memmove/src/\",\":mud/=lib/mud/packages/solecs/src/\",\":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/\"]},\"sources\":{\"lib/mud/packages/solecs/src/LibTypes.sol\":{\"keccak256\":\"0x6e28306a3fd82d16ffaa780fd4f7dd50749cd7446c5250990855bd903b71bd8d\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://ebde66e846ec8ff4f5676410a5bcbcee4916ad28ad5f1b53c80ccad57cfa0266\",\"dweb:/ipfs/QmWqmukE1AthrjPNke9uqzSpNFKSzshbfircbQx3waiJeA\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/",
+        ":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/",
+        ":ds-test/=lib/mud/node_modules/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=lib/mud/node_modules/hardhat/",
+        ":memmove/=lib/mud/node_modules/memmove/src/",
+        ":mud/=lib/mud/packages/solecs/src/",
+        ":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/mud/packages/solecs/src/LibTypes.sol": "LibTypes"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/mud/packages/solecs/src/LibTypes.sol": {
+        "keccak256": "0x6e28306a3fd82d16ffaa780fd4f7dd50749cd7446c5250990855bd903b71bd8d",
+        "urls": [
+          "bzz-raw://ebde66e846ec8ff4f5676410a5bcbcee4916ad28ad5f1b53c80ccad57cfa0266",
+          "dweb:/ipfs/QmWqmukE1AthrjPNke9uqzSpNFKSzshbfircbQx3waiJeA"
+        ],
+        "license": "Unlicense"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/mud/packages/solecs/src/LibTypes.sol",
+    "id": 24300,
+    "exportedSymbols": {
+      "LibTypes": [
+        24299
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:574:10",
+    "nodes": [
+      {
+        "id": 24264,
+        "nodeType": "PragmaDirective",
+        "src": "38:25:10",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 24299,
+        "nodeType": "ContractDefinition",
+        "src": "107:504:10",
+        "nodes": [
+          {
+            "id": 24298,
+            "nodeType": "EnumDefinition",
+            "src": "128:481:10",
+            "canonicalName": "LibTypes.SchemaValue",
+            "members": [
+              {
+                "id": 24266,
+                "name": "BOOL",
+                "nameLocation": "151:4:10",
+                "nodeType": "EnumValue",
+                "src": "151:4:10"
+              },
+              {
+                "id": 24267,
+                "name": "INT8",
+                "nameLocation": "161:4:10",
+                "nodeType": "EnumValue",
+                "src": "161:4:10"
+              },
+              {
+                "id": 24268,
+                "name": "INT16",
+                "nameLocation": "171:5:10",
+                "nodeType": "EnumValue",
+                "src": "171:5:10"
+              },
+              {
+                "id": 24269,
+                "name": "INT32",
+                "nameLocation": "182:5:10",
+                "nodeType": "EnumValue",
+                "src": "182:5:10"
+              },
+              {
+                "id": 24270,
+                "name": "INT64",
+                "nameLocation": "193:5:10",
+                "nodeType": "EnumValue",
+                "src": "193:5:10"
+              },
+              {
+                "id": 24271,
+                "name": "INT128",
+                "nameLocation": "204:6:10",
+                "nodeType": "EnumValue",
+                "src": "204:6:10"
+              },
+              {
+                "id": 24272,
+                "name": "INT256",
+                "nameLocation": "216:6:10",
+                "nodeType": "EnumValue",
+                "src": "216:6:10"
+              },
+              {
+                "id": 24273,
+                "name": "INT",
+                "nameLocation": "228:3:10",
+                "nodeType": "EnumValue",
+                "src": "228:3:10"
+              },
+              {
+                "id": 24274,
+                "name": "UINT8",
+                "nameLocation": "237:5:10",
+                "nodeType": "EnumValue",
+                "src": "237:5:10"
+              },
+              {
+                "id": 24275,
+                "name": "UINT16",
+                "nameLocation": "248:6:10",
+                "nodeType": "EnumValue",
+                "src": "248:6:10"
+              },
+              {
+                "id": 24276,
+                "name": "UINT32",
+                "nameLocation": "260:6:10",
+                "nodeType": "EnumValue",
+                "src": "260:6:10"
+              },
+              {
+                "id": 24277,
+                "name": "UINT64",
+                "nameLocation": "272:6:10",
+                "nodeType": "EnumValue",
+                "src": "272:6:10"
+              },
+              {
+                "id": 24278,
+                "name": "UINT128",
+                "nameLocation": "284:7:10",
+                "nodeType": "EnumValue",
+                "src": "284:7:10"
+              },
+              {
+                "id": 24279,
+                "name": "UINT256",
+                "nameLocation": "297:7:10",
+                "nodeType": "EnumValue",
+                "src": "297:7:10"
+              },
+              {
+                "id": 24280,
+                "name": "BYTES",
+                "nameLocation": "310:5:10",
+                "nodeType": "EnumValue",
+                "src": "310:5:10"
+              },
+              {
+                "id": 24281,
+                "name": "STRING",
+                "nameLocation": "321:6:10",
+                "nodeType": "EnumValue",
+                "src": "321:6:10"
+              },
+              {
+                "id": 24282,
+                "name": "BOOL_ARRAY",
+                "nameLocation": "333:10:10",
+                "nodeType": "EnumValue",
+                "src": "333:10:10"
+              },
+              {
+                "id": 24283,
+                "name": "INT8_ARRAY",
+                "nameLocation": "349:10:10",
+                "nodeType": "EnumValue",
+                "src": "349:10:10"
+              },
+              {
+                "id": 24284,
+                "name": "INT16_ARRAY",
+                "nameLocation": "365:11:10",
+                "nodeType": "EnumValue",
+                "src": "365:11:10"
+              },
+              {
+                "id": 24285,
+                "name": "INT32_ARRAY",
+                "nameLocation": "382:11:10",
+                "nodeType": "EnumValue",
+                "src": "382:11:10"
+              },
+              {
+                "id": 24286,
+                "name": "INT64_ARRAY",
+                "nameLocation": "399:11:10",
+                "nodeType": "EnumValue",
+                "src": "399:11:10"
+              },
+              {
+                "id": 24287,
+                "name": "INT128_ARRAY",
+                "nameLocation": "416:12:10",
+                "nodeType": "EnumValue",
+                "src": "416:12:10"
+              },
+              {
+                "id": 24288,
+                "name": "INT256_ARRAY",
+                "nameLocation": "434:12:10",
+                "nodeType": "EnumValue",
+                "src": "434:12:10"
+              },
+              {
+                "id": 24289,
+                "name": "INT_ARRAY",
+                "nameLocation": "452:9:10",
+                "nodeType": "EnumValue",
+                "src": "452:9:10"
+              },
+              {
+                "id": 24290,
+                "name": "UINT8_ARRAY",
+                "nameLocation": "467:11:10",
+                "nodeType": "EnumValue",
+                "src": "467:11:10"
+              },
+              {
+                "id": 24291,
+                "name": "UINT16_ARRAY",
+                "nameLocation": "484:12:10",
+                "nodeType": "EnumValue",
+                "src": "484:12:10"
+              },
+              {
+                "id": 24292,
+                "name": "UINT32_ARRAY",
+                "nameLocation": "502:12:10",
+                "nodeType": "EnumValue",
+                "src": "502:12:10"
+              },
+              {
+                "id": 24293,
+                "name": "UINT64_ARRAY",
+                "nameLocation": "520:12:10",
+                "nodeType": "EnumValue",
+                "src": "520:12:10"
+              },
+              {
+                "id": 24294,
+                "name": "UINT128_ARRAY",
+                "nameLocation": "538:13:10",
+                "nodeType": "EnumValue",
+                "src": "538:13:10"
+              },
+              {
+                "id": 24295,
+                "name": "UINT256_ARRAY",
+                "nameLocation": "557:13:10",
+                "nodeType": "EnumValue",
+                "src": "557:13:10"
+              },
+              {
+                "id": 24296,
+                "name": "BYTES_ARRAY",
+                "nameLocation": "576:11:10",
+                "nodeType": "EnumValue",
+                "src": "576:11:10"
+              },
+              {
+                "id": 24297,
+                "name": "STRING_ARRAY",
+                "nameLocation": "593:12:10",
+                "nodeType": "EnumValue",
+                "src": "593:12:10"
+              }
+            ],
+            "name": "SchemaValue",
+            "nameLocation": "133:11:10"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "LibTypes",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 24265,
+          "nodeType": "StructuredDocumentation",
+          "src": "65:41:10",
+          "text": " Enum of supported schema types"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          24299
+        ],
+        "name": "LibTypes",
+        "nameLocation": "115:8:10",
+        "scope": 24300,
+        "usedErrors": []
+      }
+    ],
+    "license": "Unlicense"
+  },
+  "id": 10
+}

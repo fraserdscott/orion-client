@@ -1,0 +1,2290 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "lib/mud/packages/solecs/src/utils.sol",
+    "id": 27264,
+    "exportedSymbols": {
+      "IComponent": [
+        26637
+      ],
+      "ISystem": [
+        26701
+      ],
+      "IUint256Component": [
+        26730
+      ],
+      "addressToEntity": [
+        27131
+      ],
+      "entityToAddress": [
+        27114
+      ],
+      "getAddressById": [
+        27167
+      ],
+      "getComponentById": [
+        27216
+      ],
+      "getIdByAddress": [
+        27196
+      ],
+      "getSystemAddressById": [
+        27243
+      ],
+      "getSystemById": [
+        27263
+      ],
+      "systemsComponentId": [
+        26586
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:2253:27",
+    "nodes": [
+      {
+        "id": 27089,
+        "nodeType": "PragmaDirective",
+        "src": "38:24:27",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 27091,
+        "nodeType": "ImportDirective",
+        "src": "64:71:27",
+        "absolutePath": "lib/mud/packages/solecs/src/interfaces/IUint256Component.sol",
+        "file": "./interfaces/IUint256Component.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 27264,
+        "sourceUnit": 26731,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 27090,
+              "name": "IUint256Component",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26730,
+              "src": "73:17:27",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 27093,
+        "nodeType": "ImportDirective",
+        "src": "136:57:27",
+        "absolutePath": "lib/mud/packages/solecs/src/interfaces/IComponent.sol",
+        "file": "./interfaces/IComponent.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 27264,
+        "sourceUnit": 26638,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 27092,
+              "name": "IComponent",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26637,
+              "src": "145:10:27",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 27095,
+        "nodeType": "ImportDirective",
+        "src": "194:51:27",
+        "absolutePath": "lib/mud/packages/solecs/src/interfaces/ISystem.sol",
+        "file": "./interfaces/ISystem.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 27264,
+        "sourceUnit": 26702,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 27094,
+              "name": "ISystem",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26701,
+              "src": "203:7:27",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 27097,
+        "nodeType": "ImportDirective",
+        "src": "246:53:27",
+        "absolutePath": "lib/mud/packages/solecs/src/constants.sol",
+        "file": "./constants.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 27264,
+        "sourceUnit": 26587,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 27096,
+              "name": "systemsComponentId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26586,
+              "src": "255:18:27",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 27114,
+        "nodeType": "FunctionDefinition",
+        "src": "367:102:27",
+        "body": {
+          "id": 27113,
+          "nodeType": "Block",
+          "src": "431:38:27",
+          "statements": [
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "id": 27109,
+                        "name": "entity",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27100,
+                        "src": "458:6:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 27108,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "450:7:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint160_$",
+                        "typeString": "type(uint160)"
+                      },
+                      "typeName": {
+                        "id": 27107,
+                        "name": "uint160",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "450:7:27",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 27110,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "450:15:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  ],
+                  "id": 27106,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "nodeType": "ElementaryTypeNameExpression",
+                  "src": "442:7:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_address_$",
+                    "typeString": "type(address)"
+                  },
+                  "typeName": {
+                    "id": 27105,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "442:7:27",
+                    "typeDescriptions": {}
+                  }
+                },
+                "id": 27111,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "442:24:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "functionReturnParameters": 27104,
+              "id": 27112,
+              "nodeType": "Return",
+              "src": "435:31:27"
+            }
+          ]
+        },
+        "documentation": {
+          "id": 27098,
+          "nodeType": "StructuredDocumentation",
+          "src": "301:65:27",
+          "text": "Turn an entity ID into its corresponding Ethereum address. "
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "entityToAddress",
+        "nameLocation": "376:15:27",
+        "parameters": {
+          "id": 27101,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27100,
+              "mutability": "mutable",
+              "name": "entity",
+              "nameLocation": "400:6:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27114,
+              "src": "392:14:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 27099,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "392:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "391:16:27"
+        },
+        "returnParameters": {
+          "id": 27104,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27103,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 27114,
+              "src": "422:7:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 27102,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "422:7:27",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "421:9:27"
+        },
+        "scope": 27264,
+        "stateMutability": "pure",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 27131,
+        "nodeType": "FunctionDefinition",
+        "src": "537:98:27",
+        "body": {
+          "id": 27130,
+          "nodeType": "Block",
+          "src": "599:36:27",
+          "statements": [
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "id": 27126,
+                        "name": "addr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27117,
+                        "src": "626:4:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 27125,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "618:7:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint160_$",
+                        "typeString": "type(uint160)"
+                      },
+                      "typeName": {
+                        "id": 27124,
+                        "name": "uint160",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "618:7:27",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 27127,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "618:13:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  ],
+                  "id": 27123,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "nodeType": "ElementaryTypeNameExpression",
+                  "src": "610:7:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_uint256_$",
+                    "typeString": "type(uint256)"
+                  },
+                  "typeName": {
+                    "id": 27122,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "610:7:27",
+                    "typeDescriptions": {}
+                  }
+                },
+                "id": 27128,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "610:22:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "functionReturnParameters": 27121,
+              "id": 27129,
+              "nodeType": "Return",
+              "src": "603:29:27"
+            }
+          ]
+        },
+        "documentation": {
+          "id": 27115,
+          "nodeType": "StructuredDocumentation",
+          "src": "471:65:27",
+          "text": "Turn an Ethereum address into its corresponding entity ID. "
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "addressToEntity",
+        "nameLocation": "546:15:27",
+        "parameters": {
+          "id": 27118,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27117,
+              "mutability": "mutable",
+              "name": "addr",
+              "nameLocation": "570:4:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27131,
+              "src": "562:12:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 27116,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "562:7:27",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "561:14:27"
+        },
+        "returnParameters": {
+          "id": 27121,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27120,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 27131,
+              "src": "590:7:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 27119,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "590:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "589:9:27"
+        },
+        "scope": 27264,
+        "stateMutability": "pure",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 27167,
+        "nodeType": "FunctionDefinition",
+        "src": "747:248:27",
+        "body": {
+          "id": 27166,
+          "nodeType": "Block",
+          "src": "834:161:27",
+          "statements": [
+            {
+              "assignments": [
+                27146
+              ],
+              "declarations": [
+                {
+                  "constant": false,
+                  "id": 27146,
+                  "mutability": "mutable",
+                  "name": "entities",
+                  "nameLocation": "855:8:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 27166,
+                  "src": "838:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 27144,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "838:7:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 27145,
+                    "nodeType": "ArrayTypeName",
+                    "src": "838:9:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "id": 27151,
+              "initialValue": {
+                "arguments": [
+                  {
+                    "id": 27149,
+                    "name": "id",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 27137,
+                    "src": "896:2:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  ],
+                  "expression": {
+                    "id": 27147,
+                    "name": "registry",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 27135,
+                    "src": "866:8:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                      "typeString": "contract IUint256Component"
+                    }
+                  },
+                  "id": 27148,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "memberLocation": "875:20:27",
+                  "memberName": "getEntitiesWithValue",
+                  "nodeType": "MemberAccess",
+                  "referencedDeclaration": 26729,
+                  "src": "866:29:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                    "typeString": "function (uint256) view external returns (uint256[] memory)"
+                  }
+                },
+                "id": 27150,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "866:33:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                  "typeString": "uint256[] memory"
+                }
+              },
+              "nodeType": "VariableDeclarationStatement",
+              "src": "838:61:27"
+            },
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 27156,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 27153,
+                        "name": "entities",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27146,
+                        "src": "911:8:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                          "typeString": "uint256[] memory"
+                        }
+                      },
+                      "id": 27154,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "920:6:27",
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "911:15:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 27155,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "930:1:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "911:20:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  {
+                    "hexValue": "6964206e6f742072656769737465726564",
+                    "id": 27157,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "933:19:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_83eed5f2cc04a1c9cae72f9deb4789760e5d017655690c8545c1389ccc7cd9c2",
+                      "typeString": "literal_string \"id not registered\""
+                    },
+                    "value": "id not registered"
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    {
+                      "typeIdentifier": "t_stringliteral_83eed5f2cc04a1c9cae72f9deb4789760e5d017655690c8545c1389ccc7cd9c2",
+                      "typeString": "literal_string \"id not registered\""
+                    }
+                  ],
+                  "id": 27152,
+                  "name": "require",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [
+                    -18,
+                    -18
+                  ],
+                  "referencedDeclaration": -18,
+                  "src": "903:7:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                    "typeString": "function (bool,string memory) pure"
+                  }
+                },
+                "id": 27158,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "903:50:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_tuple$__$",
+                  "typeString": "tuple()"
+                }
+              },
+              "id": 27159,
+              "nodeType": "ExpressionStatement",
+              "src": "903:50:27"
+            },
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "baseExpression": {
+                      "id": 27161,
+                      "name": "entities",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27146,
+                      "src": "980:8:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                        "typeString": "uint256[] memory"
+                      }
+                    },
+                    "id": 27163,
+                    "indexExpression": {
+                      "hexValue": "30",
+                      "id": 27162,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "989:1:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "980:11:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  ],
+                  "id": 27160,
+                  "name": "entityToAddress",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 27114,
+                  "src": "964:15:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_address_$",
+                    "typeString": "function (uint256) pure returns (address)"
+                  }
+                },
+                "id": 27164,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "964:28:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "functionReturnParameters": 27141,
+              "id": 27165,
+              "nodeType": "Return",
+              "src": "957:35:27"
+            }
+          ]
+        },
+        "documentation": {
+          "id": 27132,
+          "nodeType": "StructuredDocumentation",
+          "src": "637:109:27",
+          "text": "Get an Ethereum address from an address/id registry component (like _components/_systems in World.sol) "
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "getAddressById",
+        "nameLocation": "756:14:27",
+        "parameters": {
+          "id": 27138,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27135,
+              "mutability": "mutable",
+              "name": "registry",
+              "nameLocation": "789:8:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27167,
+              "src": "771:26:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                "typeString": "contract IUint256Component"
+              },
+              "typeName": {
+                "id": 27134,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 27133,
+                  "name": "IUint256Component",
+                  "nameLocations": [
+                    "771:17:27"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 26730,
+                  "src": "771:17:27"
+                },
+                "referencedDeclaration": 26730,
+                "src": "771:17:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                  "typeString": "contract IUint256Component"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 27137,
+              "mutability": "mutable",
+              "name": "id",
+              "nameLocation": "807:2:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27167,
+              "src": "799:10:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 27136,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "799:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "770:40:27"
+        },
+        "returnParameters": {
+          "id": 27141,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27140,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 27167,
+              "src": "825:7:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 27139,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "825:7:27",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "824:9:27"
+        },
+        "scope": 27264,
+        "stateMutability": "view",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 27196,
+        "nodeType": "FunctionDefinition",
+        "src": "1100:217:27",
+        "body": {
+          "id": 27195,
+          "nodeType": "Block",
+          "src": "1189:128:27",
+          "statements": [
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 27182,
+                            "name": "addr",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 27173,
+                            "src": "1230:4:27",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 27181,
+                          "name": "addressToEntity",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 27131,
+                          "src": "1214:15:27",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_address_$returns$_t_uint256_$",
+                            "typeString": "function (address) pure returns (uint256)"
+                          }
+                        },
+                        "id": 27183,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1214:21:27",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 27179,
+                        "name": "registry",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27171,
+                        "src": "1201:8:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                          "typeString": "contract IUint256Component"
+                        }
+                      },
+                      "id": 27180,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1210:3:27",
+                      "memberName": "has",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 26615,
+                      "src": "1201:12:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (uint256) view external returns (bool)"
+                      }
+                    },
+                    "id": 27184,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1201:35:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  {
+                    "hexValue": "61646472657373206e6f742072656769737465726564",
+                    "id": 27185,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1238:24:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_015c9bb3c7b5247cbeeccf1f87ee0576a2cf9d6667121005c1c9afebfbff1b7a",
+                      "typeString": "literal_string \"address not registered\""
+                    },
+                    "value": "address not registered"
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    {
+                      "typeIdentifier": "t_stringliteral_015c9bb3c7b5247cbeeccf1f87ee0576a2cf9d6667121005c1c9afebfbff1b7a",
+                      "typeString": "literal_string \"address not registered\""
+                    }
+                  ],
+                  "id": 27178,
+                  "name": "require",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [
+                    -18,
+                    -18
+                  ],
+                  "referencedDeclaration": -18,
+                  "src": "1193:7:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                    "typeString": "function (bool,string memory) pure"
+                  }
+                },
+                "id": 27186,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "1193:70:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_tuple$__$",
+                  "typeString": "tuple()"
+                }
+              },
+              "id": 27187,
+              "nodeType": "ExpressionStatement",
+              "src": "1193:70:27"
+            },
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "id": 27191,
+                        "name": "addr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27173,
+                        "src": "1308:4:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 27190,
+                      "name": "addressToEntity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27131,
+                      "src": "1292:15:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) pure returns (uint256)"
+                      }
+                    },
+                    "id": 27192,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1292:21:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  ],
+                  "expression": {
+                    "id": 27188,
+                    "name": "registry",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 27171,
+                    "src": "1274:8:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                      "typeString": "contract IUint256Component"
+                    }
+                  },
+                  "id": 27189,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "memberLocation": "1283:8:27",
+                  "memberName": "getValue",
+                  "nodeType": "MemberAccess",
+                  "referencedDeclaration": 26721,
+                  "src": "1274:17:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_uint256_$",
+                    "typeString": "function (uint256) view external returns (uint256)"
+                  }
+                },
+                "id": 27193,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "1274:40:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "functionReturnParameters": 27177,
+              "id": 27194,
+              "nodeType": "Return",
+              "src": "1267:47:27"
+            }
+          ]
+        },
+        "documentation": {
+          "id": 27168,
+          "nodeType": "StructuredDocumentation",
+          "src": "997:102:27",
+          "text": "Get an entity id from an address/id registry component (like _components/_systems in World.sol) "
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "getIdByAddress",
+        "nameLocation": "1109:14:27",
+        "parameters": {
+          "id": 27174,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27171,
+              "mutability": "mutable",
+              "name": "registry",
+              "nameLocation": "1142:8:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27196,
+              "src": "1124:26:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                "typeString": "contract IUint256Component"
+              },
+              "typeName": {
+                "id": 27170,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 27169,
+                  "name": "IUint256Component",
+                  "nameLocations": [
+                    "1124:17:27"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 26730,
+                  "src": "1124:17:27"
+                },
+                "referencedDeclaration": 26730,
+                "src": "1124:17:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                  "typeString": "contract IUint256Component"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 27173,
+              "mutability": "mutable",
+              "name": "addr",
+              "nameLocation": "1160:4:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27196,
+              "src": "1152:12:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 27172,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1152:7:27",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1123:42:27"
+        },
+        "returnParameters": {
+          "id": 27177,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27176,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 27196,
+              "src": "1180:7:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 27175,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1180:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1179:9:27"
+        },
+        "scope": 27264,
+        "stateMutability": "view",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 27216,
+        "nodeType": "FunctionDefinition",
+        "src": "1412:150:27",
+        "body": {
+          "id": 27215,
+          "nodeType": "Block",
+          "src": "1506:56:27",
+          "statements": [
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "id": 27210,
+                        "name": "components",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27200,
+                        "src": "1543:10:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                          "typeString": "contract IUint256Component"
+                        }
+                      },
+                      {
+                        "id": 27211,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27202,
+                        "src": "1555:2:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                          "typeString": "contract IUint256Component"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 27209,
+                      "name": "getAddressById",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27167,
+                      "src": "1528:14:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$26730_$_t_uint256_$returns$_t_address_$",
+                        "typeString": "function (contract IUint256Component,uint256) view returns (address)"
+                      }
+                    },
+                    "id": 27212,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1528:30:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  ],
+                  "id": 27208,
+                  "name": "IComponent",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 26637,
+                  "src": "1517:10:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_IComponent_$26637_$",
+                    "typeString": "type(contract IComponent)"
+                  }
+                },
+                "id": 27213,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "1517:42:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IComponent_$26637",
+                  "typeString": "contract IComponent"
+                }
+              },
+              "functionReturnParameters": 27207,
+              "id": 27214,
+              "nodeType": "Return",
+              "src": "1510:49:27"
+            }
+          ]
+        },
+        "documentation": {
+          "id": 27197,
+          "nodeType": "StructuredDocumentation",
+          "src": "1319:92:27",
+          "text": "Get a Component from an address/id registry component (like _components in World.sol) "
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "getComponentById",
+        "nameLocation": "1421:16:27",
+        "parameters": {
+          "id": 27203,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27200,
+              "mutability": "mutable",
+              "name": "components",
+              "nameLocation": "1456:10:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27216,
+              "src": "1438:28:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                "typeString": "contract IUint256Component"
+              },
+              "typeName": {
+                "id": 27199,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 27198,
+                  "name": "IUint256Component",
+                  "nameLocations": [
+                    "1438:17:27"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 26730,
+                  "src": "1438:17:27"
+                },
+                "referencedDeclaration": 26730,
+                "src": "1438:17:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                  "typeString": "contract IUint256Component"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 27202,
+              "mutability": "mutable",
+              "name": "id",
+              "nameLocation": "1476:2:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27216,
+              "src": "1468:10:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 27201,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1468:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1437:42:27"
+        },
+        "returnParameters": {
+          "id": 27207,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27206,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 27216,
+              "src": "1494:10:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IComponent_$26637",
+                "typeString": "contract IComponent"
+              },
+              "typeName": {
+                "id": 27205,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 27204,
+                  "name": "IComponent",
+                  "nameLocations": [
+                    "1494:10:27"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 26637,
+                  "src": "1494:10:27"
+                },
+                "referencedDeclaration": 26637,
+                "src": "1494:10:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IComponent_$26637",
+                  "typeString": "contract IComponent"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1493:12:27"
+        },
+        "scope": 27264,
+        "stateMutability": "view",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 27243,
+        "nodeType": "FunctionDefinition",
+        "src": "1748:233:27",
+        "body": {
+          "id": 27242,
+          "nodeType": "Block",
+          "src": "1843:138:27",
+          "statements": [
+            {
+              "assignments": [
+                27229
+              ],
+              "declarations": [
+                {
+                  "constant": false,
+                  "id": 27229,
+                  "mutability": "mutable",
+                  "name": "systems",
+                  "nameLocation": "1865:7:27",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 27242,
+                  "src": "1847:25:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                    "typeString": "contract IUint256Component"
+                  },
+                  "typeName": {
+                    "id": 27228,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 27227,
+                      "name": "IUint256Component",
+                      "nameLocations": [
+                        "1847:17:27"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 26730,
+                      "src": "1847:17:27"
+                    },
+                    "referencedDeclaration": 26730,
+                    "src": "1847:17:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                      "typeString": "contract IUint256Component"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "id": 27236,
+              "initialValue": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "id": 27232,
+                        "name": "components",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27220,
+                        "src": "1908:10:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                          "typeString": "contract IUint256Component"
+                        }
+                      },
+                      {
+                        "id": 27233,
+                        "name": "systemsComponentId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 26586,
+                        "src": "1920:18:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                          "typeString": "contract IUint256Component"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 27231,
+                      "name": "getAddressById",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27167,
+                      "src": "1893:14:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$26730_$_t_uint256_$returns$_t_address_$",
+                        "typeString": "function (contract IUint256Component,uint256) view returns (address)"
+                      }
+                    },
+                    "id": 27234,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1893:46:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  ],
+                  "id": 27230,
+                  "name": "IUint256Component",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 26730,
+                  "src": "1875:17:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_IUint256Component_$26730_$",
+                    "typeString": "type(contract IUint256Component)"
+                  }
+                },
+                "id": 27235,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "1875:65:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                  "typeString": "contract IUint256Component"
+                }
+              },
+              "nodeType": "VariableDeclarationStatement",
+              "src": "1847:93:27"
+            },
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "id": 27238,
+                    "name": "systems",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 27229,
+                    "src": "1966:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                      "typeString": "contract IUint256Component"
+                    }
+                  },
+                  {
+                    "id": 27239,
+                    "name": "id",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 27222,
+                    "src": "1975:2:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                      "typeString": "contract IUint256Component"
+                    },
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  ],
+                  "id": 27237,
+                  "name": "getAddressById",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 27167,
+                  "src": "1951:14:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$26730_$_t_uint256_$returns$_t_address_$",
+                    "typeString": "function (contract IUint256Component,uint256) view returns (address)"
+                  }
+                },
+                "id": 27240,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "functionCall",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "1951:27:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "functionReturnParameters": 27226,
+              "id": 27241,
+              "nodeType": "Return",
+              "src": "1944:34:27"
+            }
+          ]
+        },
+        "documentation": {
+          "id": 27217,
+          "nodeType": "StructuredDocumentation",
+          "src": "1564:183:27",
+          "text": " Get the Ethereum address of a System from an address/id component registry component in which the\n System registry component is registered (like _components in World.sol)"
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "getSystemAddressById",
+        "nameLocation": "1757:20:27",
+        "parameters": {
+          "id": 27223,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27220,
+              "mutability": "mutable",
+              "name": "components",
+              "nameLocation": "1796:10:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27243,
+              "src": "1778:28:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                "typeString": "contract IUint256Component"
+              },
+              "typeName": {
+                "id": 27219,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 27218,
+                  "name": "IUint256Component",
+                  "nameLocations": [
+                    "1778:17:27"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 26730,
+                  "src": "1778:17:27"
+                },
+                "referencedDeclaration": 26730,
+                "src": "1778:17:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                  "typeString": "contract IUint256Component"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 27222,
+              "mutability": "mutable",
+              "name": "id",
+              "nameLocation": "1816:2:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27243,
+              "src": "1808:10:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 27221,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "1808:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1777:42:27"
+        },
+        "returnParameters": {
+          "id": 27226,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27225,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 27243,
+              "src": "1834:7:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName": {
+                "id": 27224,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1834:7:27",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "1833:9:27"
+        },
+        "scope": 27264,
+        "stateMutability": "view",
+        "virtual": false,
+        "visibility": "internal"
+      },
+      {
+        "id": 27263,
+        "nodeType": "FunctionDefinition",
+        "src": "2143:147:27",
+        "body": {
+          "id": 27262,
+          "nodeType": "Block",
+          "src": "2231:59:27",
+          "statements": [
+            {
+              "expression": {
+                "arguments": [
+                  {
+                    "arguments": [
+                      {
+                        "id": 27257,
+                        "name": "components",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27247,
+                        "src": "2271:10:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                          "typeString": "contract IUint256Component"
+                        }
+                      },
+                      {
+                        "id": 27258,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27249,
+                        "src": "2283:2:27",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                          "typeString": "contract IUint256Component"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 27256,
+                      "name": "getSystemAddressById",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27243,
+                      "src": "2250:20:27",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$26730_$_t_uint256_$returns$_t_address_$",
+                        "typeString": "function (contract IUint256Component,uint256) view returns (address)"
+                      }
+                    },
+                    "id": 27259,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2250:36:27",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "expression": {
+                  "argumentTypes": [
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  ],
+                  "id": 27255,
+                  "name": "ISystem",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 26701,
+                  "src": "2242:7:27",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_ISystem_$26701_$",
+                    "typeString": "type(contract ISystem)"
+                  }
+                },
+                "id": 27260,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "kind": "typeConversion",
+                "lValueRequested": false,
+                "nameLocations": [],
+                "names": [],
+                "nodeType": "FunctionCall",
+                "src": "2242:45:27",
+                "tryCall": false,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_ISystem_$26701",
+                  "typeString": "contract ISystem"
+                }
+              },
+              "functionReturnParameters": 27254,
+              "id": 27261,
+              "nodeType": "Return",
+              "src": "2235:52:27"
+            }
+          ]
+        },
+        "documentation": {
+          "id": 27244,
+          "nodeType": "StructuredDocumentation",
+          "src": "1983:159:27",
+          "text": " Get a System from an address/id component registry component in which the\n System registry component is registered (like _components in World.sol)"
+        },
+        "implemented": true,
+        "kind": "freeFunction",
+        "modifiers": [],
+        "name": "getSystemById",
+        "nameLocation": "2152:13:27",
+        "parameters": {
+          "id": 27250,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27247,
+              "mutability": "mutable",
+              "name": "components",
+              "nameLocation": "2184:10:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27263,
+              "src": "2166:28:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                "typeString": "contract IUint256Component"
+              },
+              "typeName": {
+                "id": 27246,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 27245,
+                  "name": "IUint256Component",
+                  "nameLocations": [
+                    "2166:17:27"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 26730,
+                  "src": "2166:17:27"
+                },
+                "referencedDeclaration": 26730,
+                "src": "2166:17:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IUint256Component_$26730",
+                  "typeString": "contract IUint256Component"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 27249,
+              "mutability": "mutable",
+              "name": "id",
+              "nameLocation": "2204:2:27",
+              "nodeType": "VariableDeclaration",
+              "scope": 27263,
+              "src": "2196:10:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName": {
+                "id": 27248,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "2196:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "2165:42:27"
+        },
+        "returnParameters": {
+          "id": 27254,
+          "nodeType": "ParameterList",
+          "parameters": [
+            {
+              "constant": false,
+              "id": 27253,
+              "mutability": "mutable",
+              "name": "",
+              "nameLocation": "-1:-1:-1",
+              "nodeType": "VariableDeclaration",
+              "scope": 27263,
+              "src": "2222:7:27",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ISystem_$26701",
+                "typeString": "contract ISystem"
+              },
+              "typeName": {
+                "id": 27252,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 27251,
+                  "name": "ISystem",
+                  "nameLocations": [
+                    "2222:7:27"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 26701,
+                  "src": "2222:7:27"
+                },
+                "referencedDeclaration": 26701,
+                "src": "2222:7:27",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_ISystem_$26701",
+                  "typeString": "contract ISystem"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "src": "2221:9:27"
+        },
+        "scope": 27264,
+        "stateMutability": "view",
+        "virtual": false,
+        "visibility": "internal"
+      }
+    ],
+    "license": "Unlicense"
+  },
+  "id": 27
+}

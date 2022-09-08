@@ -1,0 +1,474 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getEntities",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "value",
+          "type": "bytes"
+        }
+      ],
+      "name": "getEntitiesWithValue",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "has",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "value",
+          "type": "bytes"
+        }
+      ],
+      "name": "update",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getEntities()": "31b933b9",
+    "getEntitiesWithValue(bytes)": "b361be46",
+    "has(uint256)": "cccf7a8e",
+    "remove(uint256)": "4cc82215",
+    "update(uint256,bytes)": "0216b838"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getEntities\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"value\",\"type\":\"bytes\"}],\"name\":\"getEntitiesWithValue\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"has\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"remove\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"value\",\"type\":\"bytes\"}],\"name\":\"update\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/mud/packages/solecs/src/interfaces/IEntityIndexer.sol\":\"IEntityIndexer\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/\",\":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/\",\":ds-test/=lib/mud/node_modules/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=lib/mud/node_modules/hardhat/\",\":memmove/=lib/mud/node_modules/memmove/src/\",\":mud/=lib/mud/packages/solecs/src/\",\":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/\"]},\"sources\":{\"lib/mud/packages/solecs/src/interfaces/IEntityContainer.sol\":{\"keccak256\":\"0x95ae0340082f859c0c31108323048c4d179a28df905ba8384f7ab8dd95d2d6a0\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://cbc49eba9e6b4eb603d2ae4189a83b8c9f0b858cd4236c94ebd23b8b06817378\",\"dweb:/ipfs/QmcTePiUxaua9NrUYWKPNMMPyaCxH1rMtniFkrSkTpwBak\"]},\"lib/mud/packages/solecs/src/interfaces/IEntityIndexer.sol\":{\"keccak256\":\"0xd6ca557fd8afe2f16679c67857affc55eb237dbc942a6390097122c65a19a52e\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://a1ea4345f6064267ed8ab657c945407d3c172e019664fe8ecdd069b1b7b44684\",\"dweb:/ipfs/QmNPv69EEjhA6dv1nC7VHv4JMb35Aop3We52QB5CaAGheF\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntities",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntitiesWithValue",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "has",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "remove"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "update"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@latticexyz/=lib/mud/node_modules/@latticexyz/solecs/src/",
+        ":@rari-capital/=lib/mud/node_modules/@rari-capital/solmate/src/",
+        ":ds-test/=lib/mud/node_modules/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=lib/mud/node_modules/hardhat/",
+        ":memmove/=lib/mud/node_modules/memmove/src/",
+        ":mud/=lib/mud/packages/solecs/src/",
+        ":openzeppelin-solidity/=lib/mud/node_modules/openzeppelin-solidity/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/mud/packages/solecs/src/interfaces/IEntityIndexer.sol": "IEntityIndexer"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/mud/packages/solecs/src/interfaces/IEntityContainer.sol": {
+        "keccak256": "0x95ae0340082f859c0c31108323048c4d179a28df905ba8384f7ab8dd95d2d6a0",
+        "urls": [
+          "bzz-raw://cbc49eba9e6b4eb603d2ae4189a83b8c9f0b858cd4236c94ebd23b8b06817378",
+          "dweb:/ipfs/QmcTePiUxaua9NrUYWKPNMMPyaCxH1rMtniFkrSkTpwBak"
+        ],
+        "license": "Unlicense"
+      },
+      "lib/mud/packages/solecs/src/interfaces/IEntityIndexer.sol": {
+        "keccak256": "0xd6ca557fd8afe2f16679c67857affc55eb237dbc942a6390097122c65a19a52e",
+        "urls": [
+          "bzz-raw://a1ea4345f6064267ed8ab657c945407d3c172e019664fe8ecdd069b1b7b44684",
+          "dweb:/ipfs/QmNPv69EEjhA6dv1nC7VHv4JMb35Aop3We52QB5CaAGheF"
+        ],
+        "license": "Unlicense"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/mud/packages/solecs/src/interfaces/IEntityIndexer.sol",
+    "id": 24714,
+    "exportedSymbols": {
+      "IEntityContainer": [
+        24694
+      ],
+      "IEntityIndexer": [
+        24713
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:244:15",
+    "nodes": [
+      {
+        "id": 24696,
+        "nodeType": "PragmaDirective",
+        "src": "38:24:15",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 24698,
+        "nodeType": "ImportDirective",
+        "src": "64:58:15",
+        "absolutePath": "lib/mud/packages/solecs/src/interfaces/IEntityContainer.sol",
+        "file": "./IEntityContainer.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 24714,
+        "sourceUnit": 24695,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 24697,
+              "name": "IEntityContainer",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 24694,
+              "src": "73:16:15",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 24713,
+        "nodeType": "ContractDefinition",
+        "src": "124:157:15",
+        "nodes": [
+          {
+            "id": 24707,
+            "nodeType": "FunctionDefinition",
+            "src": "173:61:15",
+            "functionSelector": "0216b838",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "update",
+            "nameLocation": "182:6:15",
+            "parameters": {
+              "id": 24705,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24702,
+                  "mutability": "mutable",
+                  "name": "entity",
+                  "nameLocation": "197:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24707,
+                  "src": "189:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 24701,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "189:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 24704,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "218:5:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24707,
+                  "src": "205:18:15",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 24703,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "205:5:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "188:36:15"
+            },
+            "returnParameters": {
+              "id": 24706,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "233:0:15"
+            },
+            "scope": 24713,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 24712,
+            "nodeType": "FunctionDefinition",
+            "src": "238:41:15",
+            "functionSelector": "4cc82215",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "remove",
+            "nameLocation": "247:6:15",
+            "parameters": {
+              "id": 24710,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24709,
+                  "mutability": "mutable",
+                  "name": "entity",
+                  "nameLocation": "262:6:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24712,
+                  "src": "254:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 24708,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "254:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "253:16:15"
+            },
+            "returnParameters": {
+              "id": 24711,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "278:0:15"
+            },
+            "scope": 24713,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 24699,
+              "name": "IEntityContainer",
+              "nameLocations": [
+                "152:16:15"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 24694,
+              "src": "152:16:15"
+            },
+            "id": 24700,
+            "nodeType": "InheritanceSpecifier",
+            "src": "152:16:15"
+          }
+        ],
+        "canonicalName": "IEntityIndexer",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          24713,
+          24694
+        ],
+        "name": "IEntityIndexer",
+        "nameLocation": "134:14:15",
+        "scope": 24714,
+        "usedErrors": []
+      }
+    ],
+    "license": "Unlicense"
+  },
+  "id": 15
+}
